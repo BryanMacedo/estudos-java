@@ -1,7 +1,5 @@
 package javaProgramacaoOrientadaObjetos.ZPraticas.Ginterfaces.dominio;
 
-import javaProgramacaoOrientadaObjetos.ZPraticas.CHeranca.dominio.Veiculo;
-
 public class CartaoCredito implements MetodoPagamento, MetodoCancelamento{
     private double valor;
 

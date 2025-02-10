@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ResourceBundleManager">
     <custom-resource-bundle>
-      <file value="file://$PROJECT_DIR$/src/messages.properties.properties" />
-      <file value="file://$PROJECT_DIR$/src/messages_en_US.properties" />
-      <base-name>messages</base-name>
-    </custom-resource-bundle>
-    <custom-resource-bundle>
       <file value="file://$PROJECT_DIR$/src/messages_en_US.properties" />
       <file value="file://$PROJECT_DIR$/src/messages_pt_BR.properties" />
       <base-name>messages</base-name>

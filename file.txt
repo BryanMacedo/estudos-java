@@ -1,0 +1,5 @@
+ATeste de escrita com fileWriter
+outra linhaTeste de escrita com fileWriter
+Outra linha
+Teste de escrita com fileWriter
+Outra linha

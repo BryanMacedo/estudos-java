@@ -1,4 +1,4 @@
-package Xserializacao.dominio;
+package javaProgramacaoOrientadaObjetos.Xserializacao.dominio;
 
 public class Turma {
     private String name;

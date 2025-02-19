@@ -1,9 +1,8 @@
-package Xserializacao.test;
+package javaProgramacaoOrientadaObjetos.Xserializacao.test;
 
-import Xserializacao.dominio.Aluno;
-import Xserializacao.dominio.Turma;
+import javaProgramacaoOrientadaObjetos.Xserializacao.dominio.Aluno;
+import javaProgramacaoOrientadaObjetos.Xserializacao.dominio.Turma;
 
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;

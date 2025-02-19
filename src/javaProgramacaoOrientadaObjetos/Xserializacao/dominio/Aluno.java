@@ -1,4 +1,4 @@
-package Xserializacao.dominio;
+package javaProgramacaoOrientadaObjetos.Xserializacao.dominio;
 
 import java.io.*;
 

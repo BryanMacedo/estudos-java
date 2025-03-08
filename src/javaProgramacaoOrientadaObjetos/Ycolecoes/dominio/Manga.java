@@ -2,7 +2,7 @@ package javaProgramacaoOrientadaObjetos.Ycolecoes.dominio;
 
 import java.util.Objects;
 
-public class Manga {
+public class Manga implements  Comparable<Manga>{
     private Long Id;
     private String nome;
     private double preco;
@@ -58,5 +58,27 @@ public class Manga {
 
     public void setPreco(double preco) {
         this.preco = preco;
+    }
+
+    @Override
+    public int compareTo(Manga outroManga) {
+        // negativo se o this < outroManga
+        //se this == outroManga return 0
+        //positivo se o this ? outroManga
+
+//        if (this.Id < outroManga.getId()){
+//            return -1;
+//        }else if (this.Id.equals(outroManga.getId())){
+//            return 0;
+//        }else {
+//            return 1;
+//        }
+
+        return this.nome.compareTo(outroManga.getNome());
+
+        //return Double.compare(preco, outroManga.getPreco());
+        //return Double.valueOf(preco).compareTo(outroManga.getPreco());
+
+        //return this.Id.compareTo(outroManga.getId());
     }
 }

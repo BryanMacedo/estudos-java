@@ -2,10 +2,11 @@ package javaProgramacaoOrientadaObjetos.Ycolecoes.dominio;
 
 import java.util.Objects;
 
-public class Manga implements  Comparable<Manga>{
+public class Manga implements Comparable<Manga> {
     private Long Id;
     private String nome;
     private double preco;
+    private int quantidade;
 
     public Manga(Long id, String nome, double preco) {
         Objects.requireNonNull(id, "Id não pode ser null");
@@ -13,6 +14,11 @@ public class Manga implements  Comparable<Manga>{
         Id = id;
         this.nome = nome;
         this.preco = preco;
+    }
+
+    public Manga(Long id, String nome, double preco, int quantidade) {
+        this(id, nome, preco);
+        this.quantidade = quantidade;
     }
 
     @Override
@@ -33,7 +39,16 @@ public class Manga implements  Comparable<Manga>{
                 "Id=" + Id +
                 ", nome='" + nome + '\'' +
                 ", preco=" + preco +
+                ", quantidade=" + quantidade +
                 '}';
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
 
     public Long getId() {

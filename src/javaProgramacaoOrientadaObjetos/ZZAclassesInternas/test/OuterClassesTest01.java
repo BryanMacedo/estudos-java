@@ -3,6 +3,7 @@ package javaProgramacaoOrientadaObjetos.ZZAclassesInternas.test;
 public class OuterClassesTest01 {
     private String name = "Monkey D. Luffy";
 
+    // Nested
     class Inner{
         public void printOuterClassAttribute(){
             System.out.println(name);

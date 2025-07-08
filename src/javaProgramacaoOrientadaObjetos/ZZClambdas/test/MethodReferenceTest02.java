@@ -6,16 +6,16 @@ import javaProgramacaoOrientadaObjetos.ZZClambdas.service.AnimeComparators;
 import java.util.ArrayList;
 import java.util.List;
 
-// reference to a static method
-public class MethodReferenceTest01 {
+// reference to an instance method of a particular object
+public class MethodReferenceTest02 {
     public static void main(String[] args) {
+        AnimeComparators animeComparators = new AnimeComparators();
         List<Anime> animeList = new ArrayList<>(List.of(new Anime("Berserk", 43),
                 new Anime("One Piece", 1152),
                 new Anime("Naruto", 500)));
 
-        //Collections.sort(animeList, (a1,a2) -> a1.getTitle().compareTo(a2.getTitle()));
-        //Collections.sort(animeList, AnimeComparators::compareByTitle);
-        animeList.sort(AnimeComparators::compareByEpisodes);
+        animeList.sort(animeComparators::compareByEpisodesNonStatic);
+        animeList.sort((a1,a2) -> animeComparators.compareByEpisodesNonStatic(a1,a2));
         System.out.println(animeList);
     }
 }
